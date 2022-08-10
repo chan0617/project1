@@ -1,0 +1,372 @@
+
+
+.bg1 {
+  background-color: #f0fdff;
+}
+
+.bg2 {
+  background-color: #68b9c4;
+}
+
+.bg3 {
+  background-color: #457d85;
+}
+
+.bg4 {
+  background-color: #13555e;
+}
+
+.bg5 {
+  background-color: #0f3b41;
+}
+
+.bg6 {
+  background-color: #091c1f;
+}
+
+#header {
+  width: 100%;
+}
+
+
+#contents {
+  width: 100%;
+}
+
+.container {
+  /* 넓이1200 */
+  max-width: 1200px;
+  background-color: rgba(255, 0, 255, 0.5);
+  height: inherit;
+  margin: auto;
+}
+
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* popup시작 */
+
+#popup {
+  height: 60px;
+  background: #BFCFF0;
+}
+
+.popup_box {
+  height: 60px;
+}
+
+.popup1 {
+  width: 402px;
+  /* background: #BFCFF0; */
+}
+
+/* .popup2 {
+  width: 553px;
+}
+
+.popup3 {
+  width: 245px;
+} */
+
+.top_menu {
+  height: 45px;
+}
+
+.top_box {
+  height: 45px;
+}
+
+.header_link {
+  width: 835px;
+}
+
+.sns_link {
+  width: 365px;
+}
+
+.gnb_box {
+  height: 90px;
+}
+
+.logo {
+  width: 235px;
+
+}
+
+.nav {
+  width: 820px;
+}
+
+.header_icon {
+  width: 145px;
+}
+
+/* 메뉴시작 */
+#contents {
+  width: 1200px;
+  height: 850px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contents_list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 3px;
+  background: #343434;
+}
+
+h2::before{
+  content: '';
+  border-top: 3px solid #343434;
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+}
+
+h2 {
+  font-size: 30px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 50px;
+  padding-top: 12px;
+}
+
+/* 게시판 검색창 */
+#search_wrap fieldset {
+  float: right;
+  margin-bottom: 10px;
+  border: 0;
+}
+
+#search_wrap select,
+#search_wrap input {
+  font-size: 14px;
+  float: left;
+  margin-right: 2px;
+  border: 1px solid #999;
+}
+
+#search_wrap select {
+  height: 35px;
+
+}
+
+#search_wrap input {
+  height: 35px;
+  line-height: 22px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+#search_wrap span {
+  position: absolute;
+  left: 0;
+}
+
+#search_wrap em {
+  color: #2F67BC;
+}
+
+#search_wrap button {
+  height: 35px;
+  width: 60px;
+  border: 0;
+  border-radius: 5px;
+  background: #0C3681;
+  color: #ffffff;
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* 게시판 목록 */
+#board .posting {
+  border-top: 1px solid #c1c1c1;
+}
+
+#board>div.first {
+  border-bottom: 0.5px solid #c0c0c0;
+}
+
+#board>div.first>div {
+  width: 150px;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  float: left;
+  font-weight: 700;
+}
+
+#board>div>div.left {
+  text-align: left;
+}
+
+#board>div input {
+  display: none;
+}
+
+#board>div>div {
+  width: 150px;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  float: left;
+}
+
+/* 게시판세부목록 */
+#board .cf .title {
+  width: 490px;
+  text-align: justify;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+#board .cf.first .title {
+  text-align: center;
+}
+
+#board .content_wrap {
+  width: 96%;
+  text-align: left;
+  padding: 0 2%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#board .content_wrap .subject {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#board .content_wrap .content {
+  text-align: justify;
+  background-color: #fff;
+  padding: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  border: none;
+}
+
+#board input:checked~div.content_wrap {
+  height: auto;
+  padding: 2% 2%;
+}
+
+#board input:checked~div.content_wrap>.subject {
+  height: auto;
+  padding: 10px 20px;
+  line-height: 26px;
+}
+
+#board input:checked~div.content_wrap>.content {
+  height: auto;
+  padding: 10px 20px;
+  line-height: 24px;
+  border: 1px solid #ddd;
+}
+
+#board input:checked~div.title>label {
+  cursor: default;
+}
+
+#board label {
+  cursor: pointer;
+}
+
+/* 페이지 */
+#page {
+  margin-bottom: 30px;
+  position: relative;
+  left: 50%;
+  top: 50px;
+  float: left;
+}
+
+
+
+#page>.this {
+  position: relative;
+  left: -50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 2px;
+  cursor: pointer;
+  border: 1px solid #333;
+  font-size: 15px;
+  color: #282828;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.next,
+.next_2 {
+  text-indent: -99999px;
+}
+
+.next {
+  background: url(https://nihc.go.kr/images/board/bbs-next.png) no-repeat center center;
+}
+
+.next_2 {
+  background: url(https://nihc.go.kr/images/board/bbs-next-end.png) no-repeat center center;
+}
+
+/* foorer시작 */
+#footer {
+  width: 100%;
+  height: 226px;
+  background: #F2F3F5;
+  border: 1px solid #dfdfdf;
+}
+
+#footer .container {
+  overflow: hidden;
+  height: 144px;
+}
+
+#footer ul {
+  margin: 30px 0;
+}
+
+#footer li {
+  height: 25.500px;
+  margin: 30px 0;
+  display: inline;
+  margin-right: 12px;
+  font-size: 16px;
+  color: #646464;
+
+}
+
+.footer_info {
+  height: 51px
+}
+
+.footer_copyright {
+  height: 22.500px;
+  margin-top: 15px;
+}
+
+#footer .btn_top {
+  position: absolute;
+  right: 0;
+}
