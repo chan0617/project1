@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>국립무형유산원MOBILE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="국립무형유산원 홈페이지입니다.">
+    <meta name="author" content="김찬미">
+    <meta name="keywords" content="국립무형">
+    <meta property="og:title" content="국립무형유산원">
+    <!-- <meta property="og:url" content="https://www.nihc.go.kr/#page0"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-800x400.png">
+    <meta property="og:site_name" content="국립무형유산원">
+    <meta property="og:description" content="국립무형유산원 홈페이지입니다.">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!-- <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png"> -->
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <h1>모바일 페이지</h1>
+    <!-- 1. 제이쿼리 라이브러리 로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- 2. 제이쿼리 라이브러리 플러그인 로드 -->
+    <script src="../js/detectmobilebrowser.js"></script>
+    <script>
+        if (jQuery.browser.mobile !== true) {
+            // console.log("mobile");
+            location.href = "../";
+        }
+    </script>
+</body>
+
+</html>

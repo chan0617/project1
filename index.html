@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/layout06.css">
   <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/detectmobilebrowser.js"></script>
+  <script src="js/custom.js"></script>
 </head>
 
 <body>
@@ -438,56 +441,109 @@
             <p>얼과 혼이 깃든 무형문화유산 공연이 되겠습니다.</p>
           </div>
           <div class="performance_wrap cf">
-            <ul class="performance_list fl">
-              <li class="fl">
-                <a href="#">
-                  <div class="performance_img">
-                    <img src="images/performance_wrap01.jpg" alt="이수자던">
-                  </div>
-                  <div class="performance_info">
-                    <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
-                    <p>국립무형유산원 대공연장</p>
-                    <p>2022년 08월 06일 <b class="day">D-0</b></p>
-                    <div class="reservation active">
-                      <em>예매하기</em>
+            <div class="performance_box fl">
+              <ul class="performance_list slide_list fl">
+                <li class="fl">
+                  <a href="#">
+                    <div class="performance_img">
+                      <img src="images/performance_wrap01.jpg" alt="이수자던">
                     </div>
-                  </div><!-- //performance_info -->
-                </a>
-              </li>
-              <li class="fl">
-                <a href="#">
-                  <div class="performance_img">
-                    <img src="images/performance_wrap01.jpg" alt="이수자던">
-                  </div>
-                  <div class="performance_info">
-                    <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
-                    <p>국립무형유산원 대공연장</p>
-                    <p>2022년 08월 06일 <b class="day">D-0</b></p>
-                    <div class="reservation">
-                      <em>예매대기</em>
+                    <div class="performance_info slide_item">
+                      <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
+                      <p>국립무형유산원 대공연장</p>
+                      <p>2022년 08월 06일 <b class="day">D-0</b></p>
+                      <div class="reservation active">
+                        <em>예매하기</em>
+                      </div>
+                    </div><!-- //performance_info -->
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="#">
+                    <div class="performance_img">
+                      <img src="images/performance_wrap01.jpg" alt="이수자던">
                     </div>
-                  </div><!-- //performance_info -->
-                </a>
-              </li>
-              <li class="fl">
-                <a href="#">
-                  <div class="performance_img">
-                    <img src="images/performance_wrap01.jpg" alt="이수자던">
-                  </div>
-                  <div class="performance_info">
-                    <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
-                    <p>국립무형유산원 대공연장</p>
-                    <p>2022년 08월 06일 <b class="day">D-0</b></p>
-                    <div class="reservation">
-                      <em>예매대기</em>
+                    <div class="performance_info slide_item">
+                      <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
+                      <p>국립무형유산원 대공연장</p>
+                      <p>2022년 08월 06일 <b class="day">D-0</b></p>
+                      <div class="reservation">
+                        <em>예매대기</em>
+                      </div>
+                    </div><!-- //performance_info -->
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="#">
+                    <div class="performance_img">
+                      <img src="images/performance_wrap01.jpg" alt="이수자던">
                     </div>
-                  </div><!-- //performance_info -->
-                </a>
-              </li>
-            </ul>
+                    <div class="performance_info slide_item">
+                      <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
+                      <p>국립무형유산원 대공연장</p>
+                      <p>2022년 08월 06일 <b class="day">D-0</b></p>
+                      <div class="reservation">
+                        <em>예매대기</em>
+                      </div>
+                    </div><!-- //performance_info -->
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="#">
+                    <div class="performance_img">
+                      <img src="images/performance_wrap01.jpg" alt="이수자던">
+                    </div>
+                    <div class="performance_info slide_item">
+                      <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
+                      <p>국립무형유산원 대공연장</p>
+                      <p>2022년 08월 06일 <b class="day">D-0</b></p>
+                      <div class="reservation">
+                        <em>예매대기</em>
+                      </div>
+                    </div><!-- //performance_info4 -->
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="#">
+                    <div class="performance_img">
+                      <img src="images/performance_wrap01.jpg" alt="이수자던">
+                    </div>
+                    <div class="performance_info slide_item">
+                      <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
+                      <p>국립무형유산원 대공연장</p>
+                      <p>2022년 08월 06일 <b class="day">D-0</b></p>
+                      <div class="reservation">
+                        <em>예매대기</em>
+                      </div>
+                    </div><!-- //performance_info -->
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="#">
+                    <div class="performance_img">
+                      <img src="images/performance_wrap01.jpg" alt="이수자던">
+                    </div>
+                    <div class="performance_info slide_item">
+                      <span>이수자뎐 ⑤ 원진주·정수인(판소리)</span>
+                      <p>국립무형유산원 대공연장</p>
+                      <p>2022년 08월 06일 <b class="day">D-0</b></p>
+                      <div class="reservation">
+                        <em>예매대기</em>
+                      </div>
+                    </div><!-- //performance_info -->
+                  </a>
+                </li>
+              </ul>
+              <div class="pfm_ctrl cf">
+                <div class="pfm-area">
+                  <div class="slide_prev_button"></div>
+                  <div class="slide_next_button"></div>
+                </div>
+              </div><!-- //pfm_ctrl -->
+            </div><!-- //performance_box -->
 
             <div class="schedule fr">
-              <div class="schedule_box">
+              <div class="schedule_box ">
                 <strong>이달의 공연</strong>
                 <span>무형문화유산을 생생히 느낄 수 있도록 다양한 프로그램을 준비하였습니다.</span>
                 <a href="#" class="fr">자세히보기</a>
@@ -772,11 +828,21 @@
       <div id="footer_banner" class="bg4">
         <div class="container">
           <ul class="footer_btn cf">
-            <li class="fl"><a href="#"></a></li>
+            <li class="fl">
+              <a href="#">
+                <img src="images/banner_01.png" alt="">
+                <img src="images/banner_02.png" alt="">
+                <img src="images/banner_03.png" alt="">
+                <img src="images/banner_04.png" alt="">
+                <img src="images/banner_05.png" alt="">
+                <img src="images/banner_06.png" alt="">
+                <img src="images/banner_07.png" alt="">
+                <img src="images/banner_08.png" alt="">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-
     </div>
     <!-- // contents끝-->
 
@@ -818,7 +884,6 @@
     </footer>
     <!-- //footer 끝 -->
   </div>
-
 </body>
 
 </html>
