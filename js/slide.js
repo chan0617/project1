@@ -33,7 +33,7 @@
 
 
 // 슬라이크 전체 크기(width 구하기)
-const slide = document.querySelector(".slide_list");
+const slide = document.querySelector(".performance_wrap");
 let slideWidth = slide.clientWidth;
 
 // 버튼 엘리먼트 선택하기
@@ -41,7 +41,7 @@ const prevBtn = document.querySelector(".slide_prev_button");
 const nextBtn = document.querySelector(".slide_next_button");
 
 // 슬라이드 전체를 선택해 값을 변경해주기 위해 슬라이드 전체 선택하기
-const slideItems = document.querySelectorAll(".slide_item");
+const slideItems = document.querySelectorAll(".performance_wrap");
 // 현재 슬라이드 위치가 슬라이드 개수를 넘기지 않게 하기 위한 변수
 const maxSlide = slideItems.length;
 
@@ -49,14 +49,14 @@ const maxSlide = slideItems.length;
 let currSlide = 3;
 
 // 페이지네이션 생성
-const pagination = document.querySelector(".slide_pagination");
+const pagination = document.querySelector(".slide_item");
 
 for (let i = 0; i < maxSlide; i++) {
-  if (i === 0) pagination.innerHTML += `<li class="active">•</li>`;
-  else pagination.innerHTML += `<li>•</li>`;
+  if (i === 0) pagination.innerHTML += `li class="active">`;
+  else pagination.innerHTML += `slide_item`;
 }
 
-const paginationItems = document.querySelectorAll(".slide_pagination > li");
+const paginationItems = document.querySelectorAll(".slide_item");
 console.log(paginationItems);
 
 // 버튼 엘리먼트에 클릭 이벤트 추가하기
