@@ -34,7 +34,7 @@
 
 // 슬라이크 전체 크기(width 구하기)
 const slide = document.querySelector(".performance_wrap");
-let slideWidth = slide.clientWidth;
+let slideWidth = slide?.clientWidth;
 
 // 버튼 엘리먼트 선택하기
 const prevBtn = document.querySelector(".slide_prev_button");
