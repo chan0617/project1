@@ -227,7 +227,7 @@
 
 .logo img {
     vertical-align: top;
-    margin-top: 22px;
+    /* margin-top: 22px; */
     /* display: inline-block; */
 }
 
@@ -420,98 +420,67 @@
     width: 100%;
 }
 
-.container_b {
+.brandVisual {
     /* position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; 
     z-index: 10; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     height: 100vh;
 }
+.visual_slide li a{
+    display: block;
+    margin-top: 310px;
+}
 
-.slide_tit {
-    position: relative;
+.visual_slide{
+    width: 100%;
     height: 100%;
 }
 
-.slide_tit a {
+.visual_slide li{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.slide_tit li img {
-    position: absolute;
-    text-align: center;
-}
-
-.banner_slide {
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
     width: 100%;
-    height: 908px;
-}
-
-.slideitem1 {
-    background: url('../images/banner01.jpg') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    padding-top: 195px;
-    box-sizing: border-box;
-}
-
-.slideitem2 {
-    background: url('../images/banner02.jpg') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: -10;
     height: 100%;
-}
-
-.slideitem6 {
-    background: url('../images/banner02.jpg') no-repeat center center;
     background-size: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: -10;
-    height: 100%;
+}
+.visual_slide li{background: no-repeat; background-size: cover;}
+
+.visual_slide li.visual_0{
+    background-image: url(../images/banner01.jpg);
+}
+.visual_slide li.visual_1{
+    background-image: url(../images/banner02.jpg);
+}
+.visual_slide li.visual_2{
+    background-image: url(../images/banner03.jpg);
+}
+
+.visual_slide li.visual_3{
+    background-image: url(../images/banner04.jpg);
+}
+
+.visual_slide li.visual_4{
+    background-image: url(../images/banner05.jpg);
+}
+
+.visual_slide li.visual_5{
+    background-image: url(../images/banner06.jpg);
 }
 
 
-.rollbtnArea {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
 
-.rollbtnArea .rollingbtn {
-    text-align: center;
-    padding: 100px;
-    vertical-align: middle;
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-}
-
-.rollingbtn li img {
-    position: relative;
-    bottom: -350px;
-}
-
-.rollbtnArea .rollingbtn li.butt0 {
-    margin-left: 100px;
-}
-
-.rollbtnArea .rollingbtn li.butt1 {
-    margin-right: 100px;
-}
+/* controls */
+.btnImg{position: relative; width: 90%; margin: auto; height: 30px; top: -444px;}
+.btnImg img{width: 30px;}
+.btnImg .prev{position: absolute; cursor: pointer; left: 100px;}
+.btnImg .next{position: absolute; cursor: pointer; right: 100px;}
 
 
 /* =============배너끝 */
@@ -1515,7 +1484,7 @@
     position: relative;
 }
 
-#footer_banner .container{
+#footer_banner .container {
     min-height: 80px;
 }
 
@@ -1546,6 +1515,7 @@
 #footer_nav {
     height: 25.500px;
     margin: 30px 0;
+    text-align: left;
 }
 
 #footer_nav li {
@@ -1577,6 +1547,10 @@
     height: 51px
 }
 
+.footer_info ul {
+    text-align: left;
+}
+
 .footer_info li {
     display: inline-block;
     color: #646464;
@@ -1592,6 +1566,7 @@
 .footer_copyright {
     height: 22.500px;
     margin-top: 15px;
+    text-align: left;
 }
 
 .footer_copyright p {
@@ -1609,7 +1584,7 @@
 .quickWrap a img {
     position: absolute;
     right: 240px;
-    bottom: 100px;
+    bottom: 150px;
 }
 
 .container {

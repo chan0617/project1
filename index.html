@@ -23,10 +23,12 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/detectmobilebrowser.js"></script>
   <script src="js/jquery.fullPage.js"></script>
   <script src="js/slide.js"></script>
+  <!-- 적응형 모바일 -->
   <script src="js/custom.js"></script>
   <script>
     $(function () {
@@ -113,10 +115,10 @@
                       <li>
                         <dl class="cf">
                           <dt class="d2 fl"><a href="#">새소식</a></dt>
-                          <dd class="fl"><a href="#">공지사항</a></dd>
-                          <dd class="fl"><a href="#">보도자료</a></dd>
-                          <dd class="fl"><a href="#">채용정보</a></dd>
-                          <dd class="fl"><a href="#">무형유산 이야기</a></dd>
+                          <dd class="fl"><a href="board.html">공지사항</a></dd>
+                          <dd class="fl"><a href="board.html">보도자료</a></dd>
+                          <dd class="fl"><a href="board.html">채용정보</a></dd>
+                          <dd class="fl"><a href="board.html">무형유산 이야기</a></dd>
                         </dl>
                       </li>
                       <li>
@@ -352,32 +354,37 @@
         </div>
         <!-- //gnb끝 -->
       </div>
-    
+
     </header>
     <!-- //header 끝 -->
     <div id="fullpage">
       <div id="content">
         <div class="section" id="banner">
-          <div class="container_b">
-            <ul class="banner_slide">
-              <li class="slideitem1">
-                <div class="slide_tit">
-                  <a href="#">
-                    <img src="images/banner_tit01.png" alt="이수자뎐">
-                  </a>
-                </div>
+          <div class="brandVisual">
+            <ul class="visual_slide">
+              <li class="visual_0">
+                <a href="#"><img src="images/banner_tit01.png" alt="배너 이미지1"></a>
               </li>
-            </ul><!-- //banner_slide -->
-            <div class="rollbtnArea">
-              <ul class="rollingbtn cf">
-                <li class="butt0 fl">
-                  <a href="#butt"><img src="images/icon_arrow_l.png" alt="left"></a>
-                </li>
-                <li class="butt1 fr ">
-                  <a href="#butt"><img src="images/icon_arrow_r.png" alt="right"></a>
-                </li>
-              </ul>
-            </div><!-- //.rollbtnArea -->
+              <li class="visual_1">
+                <a href="#"><img src="images/banner_tit02.png" alt="배너 이미지2"></a>
+              </li>
+              <li class="visual_2">
+                <a href="#"><img src="images/banner_tit03.png" alt="배너 이미지3"></a>
+              </li>
+              <li class="visual_3">
+                <a href="#"><img src="images/banner_tit04.png" alt="배너 이미지4"></a>
+              </li>
+              <li class="visual_4">
+                <a href="#"><img src="images/banner_tit05.png" alt="배너 이미지5"></a>
+              </li>
+              <li class="visual_5">
+                <a href="#"><img src="images/banner_tit06.png" alt="배너 이미지6"></a>
+              </li>
+            </ul>
+            <div class="btnImg">
+              <img src="images/icon_arrow_l.png" alt="prev" class="prev">
+              <img src="images/icon_arrow_r.png" alt="next" class="next">
+            </div><!-- //btnImg -->
           </div>
         </div><!-- //banner -->
 
