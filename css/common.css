@@ -432,17 +432,18 @@
     overflow: hidden;
     height: 100vh;
 }
-.visual_slide li a{
+
+.visual_slide li a {
     display: block;
     margin-top: 310px;
 }
 
-.visual_slide{
+.visual_slide {
     width: 100%;
     height: 100%;
 }
 
-.visual_slide li{
+.visual_slide li {
     position: absolute;
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -450,37 +451,84 @@
     height: 100%;
     background-size: cover;
 }
-.visual_slide li{background: no-repeat; background-size: cover;}
 
-.visual_slide li.visual_0{
+.visual_slide li {
+    background: no-repeat;
+    background-size: cover;
+}
+
+.visual_slide li.visual_0 {
     background-image: url(../images/banner01.jpg);
 }
-.visual_slide li.visual_1{
+
+.visual_slide li.visual_1 {
     background-image: url(../images/banner02.jpg);
 }
-.visual_slide li.visual_2{
+
+.visual_slide li.visual_2 {
     background-image: url(../images/banner03.jpg);
 }
 
-.visual_slide li.visual_3{
+.visual_slide li.visual_3 {
     background-image: url(../images/banner04.jpg);
 }
 
-.visual_slide li.visual_4{
+.visual_slide li.visual_4 {
     background-image: url(../images/banner05.jpg);
 }
 
-.visual_slide li.visual_5{
+.visual_slide li.visual_5 {
     background-image: url(../images/banner06.jpg);
 }
 
 
 
 /* controls */
-.btnImg{position: relative; width: 90%; margin: auto; height: 30px; top: -444px;}
-.btnImg img{width: 30px;}
-.btnImg .prev{position: absolute; cursor: pointer; left: 100px;}
-.btnImg .next{position: absolute; cursor: pointer; right: 100px;}
+.btnImg {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 30px;
+    top: -444px;
+}
+
+.btnImg img {
+    width: 30px;
+}
+
+.btnImg .prev {
+    position: absolute;
+    cursor: pointer;
+    left: 100px;
+}
+
+.btnImg .next {
+    position: absolute;
+    cursor: pointer;
+    right: 100px;
+}
+
+.pagerList span {
+    position: absolute;
+    left: 50%;
+    top: 74%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 7%;
+    text-shadow: 1px 1px #000;
+}
+
+.counter {
+    position: absolute;
+    right: 50%;
+    top: 87%;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
 
 
 /* =============배너끝 */
@@ -559,8 +607,75 @@
     position: absolute;
 }
 
+/* =========================================================== 여기서부터 시작*/
+.slide_wrapper {
+    position: relative;
+    width: 660px;
+    overflow: hidden;
+    padding-top: 200px;
+    left: 50%;
+    /* left 조절 */
+    transform: translateX(-50%);
+    /* 크기에맞게 줄이면됨 */
+}
 
-.news_img {
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background: #e0d595;
+}
+
+.slides li {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+}
+
+.slides li a {
+    display: block;
+    height: 100%;
+}
+
+.slides li a img {
+    height: 100%;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls span {
+    padding: 10px 20px;
+    display: inline-block;
+    left: 16%;
+}
+
+.pager {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.pager::after {
+    content: '';
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 2%;
+    height: 2%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #302d2c;
+    border-radius: 50%;
+}
+
+/* .news_img {
     position: absolute;
     right: 44.203px;
     top: 55.35px;
@@ -600,8 +715,8 @@
     border-radius: 50%;
     border: 1px solid #302d2c;
     margin: 0 3px;
-}
-
+} */
+/* ===================================================여기까지 */
 .news_list p a {
     font-size: 16px;
     height: 50px;
@@ -1591,4 +1706,5 @@
     /* 넓이1200 */
     max-width: 1200px;
     margin: auto;
+    overflow: hidden;
 }

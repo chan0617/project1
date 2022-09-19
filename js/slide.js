@@ -60,7 +60,7 @@ const paginationItems = document.querySelectorAll(".slide_item");
 console.log(paginationItems);
 
 // 버튼 엘리먼트에 클릭 이벤트 추가하기
-nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener("click", function() {
   // 이후 버튼 누를 경우 현재 슬라이드를 변경
   currSlide++;
   // 마지막 슬라이드 이상으로 넘어가지 않게 하기 위해서

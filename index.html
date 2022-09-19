@@ -17,30 +17,21 @@
   <meta property="og:site_name" content="국립무형유산원">
   <meta property="og:description" content="국립무형유산원 홈페이지입니다.">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="/manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
   <script src="js/detectmobilebrowser.js"></script>
   <script src="js/jquery.fullPage.js"></script>
-  <script src="js/slide.js"></script>
+
+  <!-- <script src="js/slide.js"></script> -->
   <!-- 적응형 모바일 -->
-  <script src="js/custom.js"></script>
-  <script>
-    $(function () {
-      $('#fullpage').fullpage({
-        //options here
-        autoScrolling: true,
-        scrollHorizontally: true,
-        navigation: true,
-        navigationPosition: 'right',
-      });
-    });    
-  </script>
+  <script src="js/custom.js"></script><!-- //배너 슬라이드-->
 
 </head>
 
@@ -385,6 +376,11 @@
               <img src="images/icon_arrow_l.png" alt="prev" class="prev">
               <img src="images/icon_arrow_r.png" alt="next" class="next">
             </div><!-- //btnImg -->
+
+            <div class="pagerList">
+              <span>/6</span>
+            </div>
+
           </div>
         </div><!-- //banner -->
 
@@ -434,7 +430,7 @@
               </div>
               <div class="news_zone fr">
                 <strong>알림판</strong>
-                <div class="news_img">
+                <!-- <div class="news_img">
                   <a href="#"><img src="images/ctrl-area_arrow_l.png" alt="왼쪽넘어가기"></a>
                   <a href="#"><img src="images/ctrl-area_play.png" alt="재생"></a>
                   <a href="#"><img src="images/ctrl-area_stop.png" alt="일시정지"></a>
@@ -447,11 +443,39 @@
                   <a href="#"><img src="images/news_zone04.jpg" alt="부패공익신고"></a>
                 </div>
                 <div class="news_ctrl">
-                  <a href="#"></a>
-                  <a href="#"></a>
-                  <a href="#"></a>
-                  <a href="#"></a>
+                  <a href="#">버튼</a>
+                  <a href="#">버튼</a>
+                  <a href="#">버튼</a>
+                  <a href="#">버튼</a>
+                </div> -->
+                <div class="container">
+                  <div class="slide_wrapper">
+                    <ul class="slides">
+                      <li><a href="#"><img src="images/news_zone01.jpg" alt="유가족바로찾기"></a></li>
+                      <li><a href="#"><img src="images/news_zone02.jpg" alt="국보서울숭례문"></a></li>
+                      <li><a href="#"><img src="images/news_zone03.jpg" alt="스마트폰보안수칙"></a></li>
+                      <li><a href="#"><img src="images/news_zone04.jpg" alt="부패공익신고"></a></li>
+                    </ul>
+                    <div class="controls">
+                      <span class="prev"><a href="#"><img src="images/ctrl-area_arrow_l.png"
+                            alt="area_arrow_l"></a></span>
+                      <span class="stop"><a href="#"><img src="images/ctrl-area_stop.png" alt="area_stop"></a></span>
+                      <span class="stats"><a href="#"><img src="images/ctrl-area_play.png" alt="area_play"></a></span>
+                      <span class="next"><a href="#"><img src="images/ctrl-area_arrow_r.png"
+                            alt="area_arrow_r"></a></span>
+                    </div>
+                  </div>
+                  <div class="pager">
+                    <span data-idx="0">1</span>
+                    <span data-idx="1">2</span>
+                    <span data-idx="2">3</span>
+                    <span data-idx="3">4</span>
+                  </div>
                 </div>
+
+
+
+
               </div>
             </div>
           </div>
@@ -902,6 +926,9 @@
     </div><!-- //fullpage -->
 
   </div>
+
+  <script src="js/slide01.js"></script>
+
 </body>
 
 </html>
