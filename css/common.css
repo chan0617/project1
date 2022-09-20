@@ -523,7 +523,8 @@
 .counter {
     position: absolute;
     right: 50%;
-    top: 87%;
+    top: 74%;
+    margin-top: 7%;
     font-size: 18px;
     color: #fff;
     text-shadow: 1px 1px #000;
@@ -610,10 +611,11 @@
 /* =========================================================== 여기서부터 시작*/
 .slide_wrapper {
     position: relative;
-    width: 660px;
+    width: 100%;
     overflow: hidden;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     left: 50%;
+    height: 280px;
     /* left 조절 */
     transform: translateX(-50%);
     /* 크기에맞게 줄이면됨 */
@@ -624,14 +626,14 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 200px;
+    height: 280px;
     background: #e0d595;
 }
 
 .slides li {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 280px;
     background: #ccc;
 }
 
@@ -646,29 +648,45 @@
 
 .controls {
     text-align: center;
-    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    margin-top: 53px;
 }
 
 .controls span {
-    padding: 10px 20px;
     display: inline-block;
     left: 16%;
 }
 
 .pager {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2em;
+
+    /* display: flex;
+    justify-content: space-between; */
+    text-align: center;
+    margin-top: 15px;
 }
 
-.pager::after {
+.pager a {
+    text-indent: -9999999px;
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    margin: 0 3px;
+}
+
+.pager a.active::after {
+    background-color: #000;
+}
+
+.pager a::after {
     content: '';
     position: absolute;
-    bottom: 35px;
-    left: 50%;
-    width: 2%;
-    height: 2%;
+    /* bottom: 35px; */
+    background-color: white;
+    left: 0;
+    width: 10px;
+    height: 10px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #302d2c;
