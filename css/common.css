@@ -627,14 +627,12 @@
     top: 0;
     width: 100%;
     height: 280px;
-    background: #e0d595;
 }
 
 .slides li {
     position: absolute;
     width: 100%;
     height: 280px;
-    background: #ccc;
 }
 
 .slides li a {
@@ -1397,6 +1395,64 @@
     background-size: cover;
 }
 
+.rental_area3 {
+    background: url('../images/section5_img4.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.rental_area3 {
+    background: url('../images/section5_img5.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.prod-list {
+    list-style: none;
+    padding: 0;
+    /* 변화하는 과정이 눈에 보이지 않는다 */
+    overflow: hidden;
+}
+
+.prod-list li {
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prod-list img {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+
+.prod_list .caption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 260px;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+    opacity: 0;
+}
+
+.prod-list .caption h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.prod_list li:hover .caption {
+    opacity: 1;
+}
+
+
+
 #content7 {
     height: 531px;
     background: url('../images/section7_bg.jpg');
@@ -1621,14 +1677,112 @@
     min-height: 80px;
 }
 
-.footer_btn li {
-    background: url('../images/linkBtn_bg.png') no-repeat;
+/* .footer_wrapper {
+    position: relative;
+    width: 100%;
+    left: 8%;
+}
+
+.footer_slides {
+    position: absolute;
+}
+
+.footer_slides li {
+    height: 80px;
+}
+
+.footer_slides li a {
+    display: inline-block;
+    width: 15%;
+}
+
+.footer_btn {
     position: absolute;
     top: 30px;
     display: block;
-    width: 100%;
     height: 50%;
 }
+
+.footer_slides li a img {
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 14px;
+} */
+
+
+
+.b1 {
+    background: url("../images/banner_01.png") no-repeat;
+}
+
+.b2 {
+    background: url("../images/banner_02.png") no-repeat;
+}
+
+.b3 {
+    background: url("../images/banner_03.png") no-repeat;
+}
+
+.b4 {
+    background: url("../images/banner_04.png") no-repeat;
+}
+
+.b5 {
+    background: url("../images/banner_05.png") no-repeat;
+}
+
+.b6 {
+    background: url("../images/banner_06.png") no-repeat;
+}
+
+.b7 {
+    background: url("../images/banner_07.png") no-repeat;
+}
+
+.b8 {
+    background: url("../images/banner_08.png") no-repeat;
+}
+
+.slide {
+    position: absolute;
+    overflow: hidden;
+    width: 500%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.slideList {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.slideTle {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    transition: 0.5s;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btc {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #footer {
@@ -1711,7 +1865,7 @@
 /* quickWrap*/
 .quickWrap {
     position: relative;
-
+    z-index: 9999999999;
 }
 
 .quickWrap a img {
