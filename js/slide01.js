@@ -9,10 +9,8 @@ var sliderContainer = $(".slide_container"),
   moveAmt, // slideWidth+slideGap 움직일 너비
   prevBtn = sliderContainer.find(".prev"),
   nextBtn = sliderContainer.find(".next"),
-  // =====내가적은부분!
   stopBtn = sliderContainer.find(".stop"),
   statsBtn = sliderContainer.find(".stats"),
-  // =====여기까지
 
   indicator = $(".pager"),
   newSlideWidth,
@@ -26,13 +24,9 @@ newSlideWidth = slideWidth;
 // indicator 추가
 slide.each(function (i) {
   indicatorHTML += '<a href="#">' + (i + 1) + "</a>";
-  // indicatorHTML+='<a href="#">'+(i+1)+'</a>' -> 1 2 3 4 5 다 나옴 / += : 값이 하나씩 더해진다.
-  // indicatorHTML='<a href="#">'+(i+1)+'</a>' -> 5만 나옴 / = : 재할당한다.
 });
 indicator.html(indicatorHTML);
 
-// 복사본 생성
-// append : 원본 뒤 추가 / clone : 복사 / prepend : 원본 앞에 추가
 slides.append(slide.clone().addClass("clone"));
 slides.prepend(slide.clone().addClass("clone"));
 // 가로 배치
@@ -103,36 +97,25 @@ function stopSlide() {
   statsBtn.show();
   stopBtn.hide();
 }
-//마우스대면 멈춤
-// slideWrapper.mouseenter(function(){
-//     stopSlide()
-// })
-// slideWrapper.mouseleave(function(){
-//     autoSlide()
-// })
 
 // 멈추기버튼
 stopBtn.click(function () {
-  console.log("하ㅏㅎ..! 멈춤!");
+  // console.log("멈춤!");
   stopSlide();
 });
 statsBtn.click(function () {
-  console.log("시작버튼");
+  // console.log("시작버튼");
   autoSlide();
 });
 
 //반응형슬라이드
 $(window).resize(function () {
-  // console.log('window의 너비는'+$(this).width());
   var winWidth = $(this).width();
   if (winWidth < 700) {
     //700보다 폭이 작으면!
     responsiveGap = 20;
     newSlideWidth =
       (slides.width() - responsiveGap * (maxSlides - 1)) / maxSlides;
-    //slides.width()=660-responsiveGap=20*(maxSlides=2-1) /maxSlides=3;
-    //660-20*2(갭이2개라서 -1를 한거임) 520/3
-    //슬라이드 하나의 너비를 재계산
   } else {
     newSlideWidth = slideWidth; //재계산하지않고 원래너비를 재할당
     responsiveGap = slideGap;
@@ -140,7 +123,7 @@ $(window).resize(function () {
   if (winWidth <= 500) {
     maxSlides = 1;
     newSlideWidth = slides.width();
-    responsiveGap = 0; //위에 통으로 다쓰겠다는 소리임
+    responsiveGap = 0; 
   }
   slideLayout(newSlideWidth, responsiveGap);
   setslidePos(); //리사이징될때마다 한번씩 적어줘야한다
