@@ -1712,35 +1712,36 @@
 
 
 .b1 {
-    background: url("../images/banner_01.png") no-repeat;
+    background: url("../images/banner_01.png") no-repeat center;
+    
 }
 
 .b2 {
-    background: url("../images/banner_02.png") no-repeat;
+    background: url("../images/banner_02.png") no-repeat center;
 }
 
 .b3 {
-    background: url("../images/banner_03.png") no-repeat;
+    background: url("../images/banner_03.png") no-repeat center;
 }
 
 .b4 {
-    background: url("../images/banner_04.png") no-repeat;
+    background: url("../images/banner_04.png") no-repeat center;
 }
 
 .b5 {
-    background: url("../images/banner_05.png") no-repeat;
+    background: url("../images/banner_05.png") no-repeat center;
 }
 
 .b6 {
-    background: url("../images/banner_06.png") no-repeat;
+    background: url("../images/banner_06.png") no-repeat center;
 }
 
 .b7 {
-    background: url("../images/banner_07.png") no-repeat;
+    background: url("../images/banner_07.png") no-repeat center;
 }
 
 .b8 {
-    background: url("../images/banner_08.png") no-repeat;
+    background: url("../images/banner_08.png") no-repeat center;
 }
 
 .slide {
@@ -1753,24 +1754,46 @@
 }
 
 .slideList {
-    width: 20%;
+    width: 6%;
     height: 100%;
     float: left;
 }
 
 .slideTle {
     position: relative;
-    width: 600px;
-    height: 300px;
+    width: 1000px;
+    height: 80px;
     transition: 0.5s;
     margin: auto;
     overflow: hidden;
 }
 
 .btc {
-    text-align: center;
+    position: absolute;
+    top: 30px;
+    display: block;
+    height: 50%;
 }
 
+#prev {
+    background: url("../images/linkBtn_r.png") no-repeat;
+    text-indent: -9999999px;
+    cursor: pointer;
+}
+
+#next {
+    background: url("../images/linkBtn_l.png") no-repeat;
+    text-indent: -9999999px;
+
+}
+
+#pause {
+    background: url("../images/linkBtn_p.png") no-repeat;
+    text-indent: -9999999px;
+
+}
+
+/* ============== */
 
 
 
