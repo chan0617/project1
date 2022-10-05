@@ -5,7 +5,7 @@ var sliderContainer = $(".slide_container"),
   currentIdx = 0,
   slideCount = slide.length,
   slideWidth = slide.width(),
-  slideGap = 50,
+  slideGap =50,
   moveAmt, // slideWidth+slideGap 움직일 너비
   prevBtn = sliderContainer.find(".prev"),
   nextBtn = sliderContainer.find(".next"),
@@ -127,4 +127,41 @@ $(window).resize(function () {
   }
   slideLayout(newSlideWidth, responsiveGap);
   setslidePos(); //리사이징될때마다 한번씩 적어줘야한다
+});
+
+
+/**
+ * 
+ * bxslider
+ * 
+ * * */
+ $(function () {
+  /**좌우컨트롤**/
+  $(".control_slider").bxSlider({
+    console: true,
+    pager: false,
+    maxSlides: 3,
+    minSlides: 3,
+    auto: true,
+    autoControls: false,
+    stopAutoOnClick: true,
+    pager: false,
+    moveSlides: 1,
+    slideWidth: 400,
+    slideMargin: 10,
+    nextText: '<i class="fa-solid fa-arrow-right"></i>',
+    prevText: '<i class="fa-solid fa-arrow-left"></i>',
+  });
+})
+
+ $('.footer-slider').bxSlider({
+  auto: true,
+  autoControls: false,
+  stopAutoOnClick: true,
+  pager: false,
+  minSlides: 5,
+  maxSlides: 5,
+  moveSlides: 1,
+  slideWidth: 400,
+  slideMargin: 10,
 });
