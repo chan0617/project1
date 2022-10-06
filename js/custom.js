@@ -99,3 +99,59 @@ $(function () {
     counter.html(num + 1);
   }
 }); //jQuray
+
+// 탑버튼
+function getWinWidthBottom() {
+  return $(window).outerWidth();
+}
+
+$(".quickWrap").bind("click", function () {
+  if (getWinWidthBottom() <= 820) {
+    $("html, body").animate({ scrollTop: 0 }, 400);
+    return false;
+  } else {
+    $.fn.fullpage.moveTo("page0", 0);
+  }
+});
+
+//스크롤기능 설정
+function setMainFullPag() {
+  // //모바일 크기에서는 동작무처리
+  // if (getWinWidth() < 819) {
+  //   return false;
+  // }
+  $("#main").fullpage({
+    anchors: [
+      "page0",
+      "page1",
+      "page2",
+      "page3",
+      "page4",
+      "page5",
+      "page6",
+      "page7",
+      "page8",
+    ],
+    autoScrolling: true,
+    scrollHorizontally: true,
+    onLeave: function (origin, destination, direction) {
+      $("#gnb ul").removeClass("active");
+      $("#gnb ul").eq(destination.index).addClass("active");
+    },
+  });
+}
+$("#nav > li > a").on("click", function () {
+  //if($("#RestWrap").css("display") === "none") {
+  var index = $("#nav > li > a > h2").index(this);
+  $.fn.fullpage.moveTo("page" + index, 0);
+  //}
+});
+$(function () {
+  setMainFullPag();
+  setMainSlider();
+  /* 		if(getWinWidth() > 820) {
+      $.fn.fullpage.setMouseWheelScrolling(false);
+      $.fn.fullpage.setAllowScrolling(false);
+  } */
+  goSearchCal("Y");
+});
