@@ -1,20 +1,25 @@
-h2,
-.skipNav,
-legend,
-hr,
-caption,
-.hidden {
-  display: none;
+.skipNav {
+  /* display: none;
   position: absolute;
   width: 0;
   height: 0;
   overflow: hidden;
   font-size: 0;
-  line-height: 0;
+  line-height: 0; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transform: translateY(-100%);
+  transition: 0.3s;
+  z-index: 1000000000000000;
 }
 
-.skip_menu {
-  /* position: fixed;
+/* .skip_menu { */
+/* position: fixed;
     left: 0;
     top: 0;
     background: #000;
@@ -24,7 +29,8 @@ caption,
     transform: translateY(-100%);
     transition: 0.3s;
     z-index: 10; */
-  position: fixed;
+
+/* position: fixed;
   width: 100%;
   text-align: center;
   left: 0;
@@ -35,12 +41,15 @@ caption,
   padding: 10px 15px;
   transform: translateY(-100%);
   transition: 0.3s;
-  z-index: 9999999967;
-}
+  z-index: 9999999967; 
+}*/
 
-.skip_menu:focus {
+.skipNav:focus {
   transform: translateY(0%);
 }
+/* .skip_menu:focus {
+  transform: translateY(0%);
+} */
 
 /* header시작 */
 #header {

@@ -132,6 +132,7 @@ function setMainFullPag() {
       "page7",
       "page8",
     ],
+
     // autoScrolling: true,
     // scrollHorizontally: true,
     // onLeave: function (origin, destination, direction) {
@@ -140,6 +141,7 @@ function setMainFullPag() {
     // },
   });
 }
+
 // $("#nav > li > a").on("click", function () {
 //   //if($("#RestWrap").css("display") === "none") {
 //   var index = $("#nav > li > a > h2").index(this);
