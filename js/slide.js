@@ -1,37 +1,3 @@
-// var slide_list = document.querySelector('.slide_list'), 
-// slide = document.querySelector('.slide_list li'),
-// currentIdx=0,
-// slideConut=slide.length,
-// prevBtn=document.querySelector('.prev'),
-// slideWidth=286.66,
-// slideMargin=20,
-// nextBtn=document.querySelector('.next');
-
-// slide_list.style.width=(slideWidth+slideMargin)*slideConut-slideMargin+'px';
-
-// function moveSlide(num){
-//     slide_list.style.left=-num*306.66+'px';
-//     currentIdx=num;
-// }
-
-// nextBtn.addEventListener('click',function(){
-//     if(currentIdx<slideConut-1){
-//     moveSlide(currentIdx+1);
-//     console.log(currentIdx);
-//     }else{
-//         moveSlide(0);
-//     }
-// });
-
-// prevBtn.addEventListener('click',function(){
-//     if(currentIdx>0){
-//     moveSlide(currentIdx-1);
-//     }else{
-//         moveSlide(slideConut-3);
-//     }
-// });
-
-
 // 슬라이크 전체 크기(width 구하기)
 const slide = document.querySelector(".performance_wrap");
 let slideWidth = slide?.clientWidth;
