@@ -1796,6 +1796,13 @@
   font-weight: 300;
 }
 
+.footer_copyright a{
+  position: relative;
+  left: 70%;
+  top: -45px;
+}
+
+
 /* quickWrap*/
 .quickWrap {
   position: relative;
